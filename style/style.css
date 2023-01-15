@@ -293,7 +293,7 @@ nav ul{
 .my-section-img-container{
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-row-gap: 15px;
+    grid-row-gap: 5px;
     justify-content: center;
     margin-top: 50px;
    
@@ -303,5 +303,104 @@ nav ul{
     width: 240px;
 }
 
+.hide{
+    display: none;
+}
+
+
+/*================= Responsive Website work==================
+============================================================= */
+
+
+@media screen and (max-width:576px) {
+    nav, ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        margin-bottom: 10px;
+    }
+
+    /* banner work */
+
+    .banner-info,
+    .banner-description,
+    .some-facts-description{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    /*-------------quick-feature-continer work------------
+    -------------------------------------------------- */
+
+    .quick-feature-continer{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .quick-feature-img-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    /*---------------feature-love-enjoy-container------
+    ---------------------------------------------------*/
+    .feature-love-enjoy-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .feature-love-enjoy-info,
+    .feature-love-enjoy-img-container{
+        width: 100%;
+    }
+    .feature-love-enjoy-img-container img{
+        
+        height: 100%;
+        width: 80%;
+    }
+    .feature-love-enjoy-btn{
+        height: 100px;
+        width: 180px;
+        bottom: 60px;
+    }
+    .feature-btn-font{
+        font-size: 35px;
+    }
+
+    /* Some fact section work */
+    .some-fact-item-container{
+        flex-direction: column;
+    }
+    .some-fact-item{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* sponsor Info work */
+    
+    .sponsor-info{
+        width: 100%;
+    }
+    .sponsor-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    /* my section work */
+
+    .my-section-img-container
+    {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    
+}
 
 
