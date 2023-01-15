@@ -330,6 +330,10 @@ nav ul{
         padding: 0;
         margin-bottom: 20px;
     }
+    .banner-btn,
+    .quick-feature-info-btn{
+        padding: 10px 5px;
+    }
     /*-------------quick-feature-continer work------------
     -------------------------------------------------- */
 
